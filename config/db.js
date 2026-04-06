@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://service_db_user:0jOGKqj6dfJPO06N@clusterservice.i5swrvh.mongodb.net/?appName=ClusterService');
+    await mongoose.connect('mongodb+srv://service_db_user:0jOGKqj6dfJPO06N@clusterservice.i5swrvh.mongodb.net/test?retryWrites=true&w=majority&appName=ClusterService');
     console.log('MongoDB\'ye başarıyla bağlandı');
   } catch (error) {
     console.error('MongoDB bağlantı hatası:', error);
